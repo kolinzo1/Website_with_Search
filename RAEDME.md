@@ -1,4 +1,4 @@
-# User Story.
+# User Story
 
 ### User Story 1: Search for GIFs
 **As a** user,  
