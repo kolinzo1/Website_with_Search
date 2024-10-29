@@ -1,12 +1,118 @@
+/* General styles for the navbar */
+.navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Logo styles */
+.logo {
+  text-decoration: none;
+  width: 50px;  /* Adjust based on your logo's dimensions */
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 100%; /* The image will take 100% of its container */
+  height: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Center vertically if needed */
+}
+
+/* Navigation menu styles */
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-menu li a:hover {
+  color: #ddd;
+}
+
+.navbar-spacer {
+  height: 60px; /* Match the height of your navbar */
+}
+
+/* Responsive design for the navbar */
+@media (max-width: 768px) {
+  .nav-menu {
+      display: none; /* Hide menu by default for mobile */
+  }
+
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px; /* Adjust based on navbar height */
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-menu.active li {
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .navbar {
+    background-color: #333;
+    /* Remove or adjust position */
+    position: static; /* or relative if you still want some control over its position */
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-between;
+  }
+
+  /* Hamburger menu icon */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
   background-color: #f0f0f0;
+  padding-top: 60px; /* Adjust this value based on your navbar's height */
 }
 
 .search-container {
   text-align: center;
+  margin-top: 20px; 
   margin-bottom: 20px;
 }
 

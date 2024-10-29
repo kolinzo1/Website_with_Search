@@ -35,3 +35,21 @@ function searchGiphy() {
           // Optionally, display an error message to the user
       });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+
+  hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (event) => {
+      if (!event.target.closest('.navbar')) {
+          navMenu.classList.remove('active');
+          hamburger.classList.remove('active');
+      }
+  });
+});
