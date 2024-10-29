@@ -33,3 +33,7 @@
 
 
 These stories guide the development process by focusing on user needs, helping to ensure the final product is both functional and user-friendly across different devices.
+
+# Wireframe
+
+![wireframe](./Images/Search_wireframe.png)
