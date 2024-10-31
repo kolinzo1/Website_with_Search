@@ -2,6 +2,15 @@
 
 ## Kola Oyedele
 
+## Overview
+This project is intended to create a website with a search engine that can be used to search for GIF images by keywords.
+The images are then displayed in three rows and a header above the images. The header indicates the keyword used to search for the images.
+
+## Details
+The web page contains a navigation bar at the top of the page with a logo clickable to homepage. It also contains other navigational elements that link to other pages.
+Below the navigation bar is a search bar and a search button. A keyword is entered into the search bar and the the search button is clicked to initiate the search.
+If images are returned from the search, a header is displayed is displayed below the search bar to indicate the keyword used to search for the images, and the returned images are displayed below the header in rows.
+
 ## User Story
 
 ### User Story 1: Search for GIFs
@@ -38,6 +47,15 @@
 
 These stories guide the development process by focusing on user needs, helping to ensure the final product is both functional and user-friendly across different devices.
 
-# Wireframe
+## Wireframe
 
 ![wireframe](./Images/Search_wireframe.png)
+
+
+## Technologies Used
+** html **css **js
+
+## Ideas for future improvement
+1. Add image download functionality
+2. Add image conversion functionality
+3. Add membership functionality
