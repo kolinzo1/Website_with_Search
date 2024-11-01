@@ -100,6 +100,60 @@
     transition: all 0.3s ease-in-out;
     background-color: white;
   }
+} 
+
+@media (max-width: 768px) {
+  .nav-menu {
+    /* Switch to column layout for mobile */
+    flex-direction: column;
+    align-items: flex-start; /* Align to the left or center as needed */
+    background-color: #333; /* Optional: darken background for better visibility */
+    position: absolute; /* Optional: to overlay content if you want */
+    top: 100%; /* Position right below the navbar */
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 10px 0; /* Add some padding */
+    z-index: 999; /* Ensure it's above other elements but below your navbar */
+    opacity: 0;
+    pointer-events: none; /* Prevent interaction when closed */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(-10px); /* Slightly move up when inactive */
+  }
+
+  .nav-menu li {
+    margin: 10px 0; /* Space between menu items vertically */
+  }
+
+  .nav-menu li a {
+    display: block; /* Make the whole list item clickable */
+    padding: 10px 20px; /* Padding for touch-friendly areas */
+  }
+
+  .nav-container {
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+
+  /* Optional: Add a toggle button for small screens, if you want */
+  .menu-toggle {
+    display: block; /* Show the hamburger menu */
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  /* Hide default menu for small screens */
+  .nav-menu {
+    display: none;
+  }
+
+  /* Show menu when toggle is active */
+  .nav-menu.active {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0); /* Bring back to original position when active */
+  }
 }
 
 body {
@@ -164,8 +218,35 @@ button {
   object-fit: cover; /* Ensures that images maintain their aspect ratio */
   border-radius: 10px; /* Optional: Adds some rounded corners to the images */
   transition: transform 0.3s;
+  min-height: 150px; /* Adjust this value to your desired minimum height */
+
 }
 
 .image-grid img:hover {
   transform: scale(1.05);
 }
+
+.archivo-black-regular {
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin: 20px 0;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.gloria-hallelujah-regular {
+  font-family: "Gloria Hallelujah", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin: 20px 0;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+

@@ -36,6 +36,11 @@ function searchGiphy() {
       });
 }
 
+function toggleMenu() {
+    const menu = document.querySelector('.nav-menu');
+    menu.classList.toggle('active');
+  }
+  
 document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.hamburger');
   const navMenu = document.querySelector('.nav-menu');
