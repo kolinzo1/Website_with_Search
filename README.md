@@ -51,6 +51,7 @@ These stories guide the development process by focusing on user needs, helping t
 
 ![wireframe](./Images/Search_wireframe.png)
 
+![Screenshots](./Images/Screenshot_Website_with_Search.png)
 
 ## Technologies Used
 **html**
