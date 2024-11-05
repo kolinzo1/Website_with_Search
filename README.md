@@ -59,6 +59,6 @@ These stories guide the development process by focusing on user needs, helping t
 **js**
 
 ## Ideas for future improvement
-1. Add image download functionality
-2. Add image conversion functionality
+1. Render API result in pages
+2. Add an input for maximum number of GIFs to return
 3. Add membership functionality
